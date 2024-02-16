@@ -8,6 +8,13 @@
   --light-grey: hsl(30, 18%, 87%);
   --wenge-brown: hsl(30, 10%, 34%);
   --dark-charcoal: hsl(24, 5%, 18%);
+
+  /* Fonts */
+  font: 400 16px/150% "Outfit", sans-serif;
+  --heading1: 400 36px/100% "Young Serif", serif;
+  --heading2: 400 28px/100% "Young Serif", serif;
+  --heading3: 600 20px/150% "Outfit", sans-serif;
+  --text-bold: 700 16px/150% "Outfit", sans-serif;
 }
 
 body {

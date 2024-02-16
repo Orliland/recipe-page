@@ -1,11 +1,13 @@
 @font-face {
   font-family: "Young Serif";
+  font-weight: 400;
   src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf)
     format("font/ttf");
 }
 
 @font-face {
   font-family: "Outfit";
+  font-weight: 400;
   src: url(../assets/fonts/outfit/static/Outfit-Regular.ttf) format("font/ttf");
 }
 

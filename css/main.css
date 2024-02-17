@@ -1,7 +1,6 @@
 :root {
   /* Colors */
   --nutmeg: hsl(14, 45%, 36%);
-  --dark-raspberry: hsl(332, 51%, 32%);
   --white: hsl(0, 0%, 100%);
   --rose-white: hsl(330, 100%, 98%);
   --eggshell: hsl(30, 54%, 90%);
@@ -11,12 +10,119 @@
 
   /* Fonts */
   font: 400 16px/150% "Outfit", sans-serif;
+  color: var(--wenge-brown);
   --heading1: 400 36px/100% "Young Serif", serif;
   --heading2: 400 28px/100% "Young Serif", serif;
   --heading3: 600 20px/150% "Outfit", sans-serif;
   --text-bold: 700 16px/150% "Outfit", sans-serif;
 }
-
 body {
   margin: 0px;
+  background-color: var(--eggshell);
+}
+
+header {
+  max-width: 736px;
+  margin: 0px auto;
+  background-color: var(--white);
+}
+
+main {
+  width: calc(100% - 64px);
+  max-width: 672px;
+  margin: 0px auto;
+  padding: 40px 32px 28px;
+  background-color: var(--white);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  font: var(--heading1);
+  margin: 0px 0px 24px;
+  color: var(--dark-charcoal);
+}
+
+h2 {
+  font: var(--heading2);
+  margin: 32px 0px 24px;
+  color: var(--nutmeg);
+}
+
+h3 {
+  font: var(--heading3);
+  margin: 0px 0px 14px;
+}
+
+div {
+  width: calc(100% - 48px);
+  margin: 32px 0px;
+  padding: 24px;
+  border-radius: 12px;
+  background-color: var(--rose-white);
+}
+
+ul {
+  margin: 0px;
+  padding-left: 20px;
+}
+
+li {
+  padding-left: 28px;
+  margin-bottom: 8px;
+}
+
+ul li:last-child {
+  margin-bottom: 0px;
+}
+
+hr {
+  margin: 32px 0px;
+  border-top: 1px solid var(--light-grey);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  border-block: 1px solid var(--light-grey);
+}
+
+tr:first-child,
+tr:last-child {
+  border: none;
+}
+
+td {
+  width: 50%;
+  padding: 12px 8px;
+}
+
+tr td:first-child {
+  padding-left: 30px;
+}
+
+@media (min-width: 736px) {
+  :root {
+    --heading1: 400 40px/100% "Young Serif", serif;
+  }
+  header {
+    width: 672px;
+    margin-top: 123px;
+    padding: 32px 32px 0px;
+    border-radius: 22px 22px 0px 0px;
+    overflow: hidden;
+  }
+  main {
+    margin-bottom: 123px;
+    border-radius: 0px 0px 22px 22px;
+  }
+  img {
+    border-radius: 12px;
+  }
 }
